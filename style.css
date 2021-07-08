@@ -1,0 +1,113 @@
+
+/* Design Nr.1
+Farben: #E3516E, #F7F3D7, #51B5A9, #FADE8B
+
+
+Design Nr.2
+Farben: #191210, #ECA03D, #84271C */
+
+html, body {
+    margin: 0;
+}
+section:first-of-type {
+    padding-top: 6.5%;
+    padding-bottom: 6.5%;
+    height: 100%;
+    background: #E3516E;
+}
+
+.circle { 
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background: #E3516E;
+}
+
+.circle > div:nth-child(1) {
+    position: absolute;
+    background: #51B5A9;
+    width: 250px;
+    height: 250px;
+    border-radius: 100% 0 0 0;
+}
+
+.circle > div:nth-child(2) {
+    position: absolute;
+    background:  #FADE8B;
+    width: 250px;
+    height: 250px;
+    margin-left: 250px;
+    border-radius: 0 100% 0 0;
+}
+
+.circle > div:nth-child(3) {
+    position: absolute;
+    background:  #F7F3D7;
+    width: 250px;
+    height: 250px;
+    margin-top: 250px;
+    border-radius: 0 0 0 100%;
+}
+
+/* section2 */
+
+section:last-of-type {
+    padding: 10%;
+    background: #000;
+}
+
+.spirit { 
+    position: relative;
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    background: #000;
+}
+
+section > .spirit > div:nth-child(1) {
+    position: absolute;
+    background: #84271C;
+    z-index: 1;
+    top: 41%;
+    left: 44.5%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+section > .spirit > div:nth-child(2) {
+    position: absolute;
+    background: #000;
+    border: 35px solid #ECA03D;
+    top: 25%;
+    left: 33%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+section > .spirit > div:nth-child(3) {
+    position: absolute;
+    background: #000;
+    border: 35px solid #ECA03D;
+    top: 50%;
+    left: 10.9%;
+    width: 120px;
+    height: 60px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    border-top: #000;
+}
+
+section > .spirit > div:nth-child(4) {
+    position: absolute;
+    background: #000;
+    border: 35px solid #ECA03D;
+    top: 33%;
+    right: 9.2%;
+    width: 120px;
+    height: 60px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    border-bottom: #000;
+}
+
